@@ -1,5 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -25,6 +23,11 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+node_modules/
+jspm_packages/
+/out-tsc
+/e2e/*.js
+/e2e/*.map
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -39,6 +42,7 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+.reports
 .coverage
 .coverage.*
 .cache
@@ -46,140 +50,82 @@ nosetests.xml
 coverage.xml
 *,cover
 .hypothesis/
+cover
 
 # Translations
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
 # PyBuilder
 target/
 
-# IPython Notebook
-.ipynb_checkpoints
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+.settings
+bin/**
+tmp/**
+build/
 
 # pyenv
 .python-version
-
-# celery beat schedule file
-celerybeat-schedule
+_test.py
+_test/
 
 # dotenv
 .env
 
 # virtualenv
+.venv/
+.idea/
 venv/
+venv2/
 ENV/
 
-# Spyder project settings
-.spyderproject
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+data/*
+data/db/*
+data/redis/*
 
-# Rope project settings
-.ropeproject
-### VirtualEnv template
-# Virtualenv
-# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
-[Bb]in
-[Ii]nclude
-[Ll]ib
-[Ll]ib64
-[Ll]ocal
-[Ss]cripts
-pyvenv.cfg
-.venv
-pip-selfcheck.json
+# Process Dev files
 
-### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+gateway/mock/Docker-process-mock
+gateway/mock/nginx-process-mock.conf
 
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+# pwa trans locales
+pwa/src/resource/locales/_build
+web/src/resource/locales/_build
 
-# AWS User-specific
-.idea/**/aws.xml
+web/src/core
+pwa/src/core
 
-# Generated files
-.idea/**/contentModel.xml
+web/package-lock.json
+pwa/package-lock.json
+package-lock.json
 
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
+/gateway/mock/Docker-process-mock
+docker-compose-upload.yml
+docker-compose-integration.yml
+venv**/
 
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+marketplace/tests/sync_app/config.py
 
-# Gradle and Maven with auto-import
-# When using Gradle or Maven with auto-import, you should exclude module files,
-# since they will be recreated, and may cause churn.  Uncomment if using
-# auto-import.
-# .idea/artifacts
-# .idea/compiler.xml
-# .idea/jarRepositories.xml
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
-# *.iml
-# *.ipr
+**conf.ini
 
-# CMake
-cmake-build-*/
+dump.rdb
+**change_stream_watch_alive.txt
+**token_store_alive.txt
 
-# Mongo Explorer plugin
-.idea/**/mongoSettings.xml
-
-# File-based project format
-*.iws
-
-# IntelliJ
-out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
-
-# SonarLint plugin
-.idea/sonarlint/
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
-# Editor-based Rest Client
-.idea/httpRequests
-
-# Android studio 3.1+ serialized cache file
-.idea/caches/build_file_checksums.ser
-
-# idea folder, uncomment if you don't need it
- .idea
+**.conf
+**config.ini
