@@ -48,7 +48,7 @@ class RoomFactory:
         return TV()
 
 
-class SmartRoomFactory:
-    def make_tv(self): #the subclass is deciding the object to return
+class SmartTVRoomFactory:
+    def make_tv(self): #the subclass is deciding the object to return (only TV changing)
         return AndroidTV
 
